@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+
+}
+
+.circular-image {
+    border-radius: 50%;
+    /* Creates a circle */
+    width: 1050px;
+    /* Set width, should be same as height */
+    height: 1000px;
+    /* Set height, should be same as width */
+    /* Optional: Add a border */
+    border: 2px solid black;
+}
+
+
+nav a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(150, 28, 28);
+
+}
+
+nav a:hover {
+
+    transition-timing-function: ease;
+    font-size: 25px;
+    color: rgb(5, 30, 99);
+
+}
+
+h1 {
+    font-size: 40px;
+
+    margin: 5px;
+}
+
+header {
+    text-align: center;
+}
+
+.education {
+    border-bottom: 2px solid black;
+}
+
+.tech-skills {
+    border-bottom: 2px solid black;
+}
+
+.projects {
+    border-bottom: 2px solid black;
+}
+
+.work-xp {
+    border-bottom: 2px solid black;
+}
+
+p,
+li,
+strong,
+em,
+span {
+    font-size: 22px;
+}
+
+li {
+    line-height: 1.5;
+}
+
+span {
+    float: right;
+}
