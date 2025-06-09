@@ -4,43 +4,59 @@ body {
 
 }
 
+
+
 .circular-image {
+
+    content: center;
     border-radius: 50%;
     /* Creates a circle */
-    width: 1050px;
+    width: 210 px;
     /* Set width, should be same as height */
-    height: 1000px;
+    height: 210px;
     /* Set height, should be same as width */
     /* Optional: Add a border */
     border: 2px solid black;
 }
 
 
-nav a {
-    font-size: 22px;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(150, 28, 28);
-
-}
-
-nav a:hover {
-
-    transition-timing-function: ease;
-    font-size: 25px;
-    color: rgb(5, 30, 99);
-
-}
-
-h1 {
-    font-size: 40px;
-
-    margin: 5px;
-}
 
 header {
-    text-align: center;
+
+
+    h1 {
+        font-size: 40px;
+
+        margin: 5px;
+    }
+
+    a img:hover {
+        transition-property: ease-in;
+        filter: invert(60%);
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    nav a {
+        font-size: 22px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(150, 28, 28);
+
+
+    }
+
+    nav a:hover {
+
+        transition-timing-function: ease;
+        font-size: 25px;
+        color: rgb(5, 30, 99);
+
+    }
 }
+
 
 .education {
     border-bottom: 2px solid black;
