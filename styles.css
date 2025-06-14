@@ -1,6 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
-    margin: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -11,52 +17,78 @@ body {
     content: center;
     border-radius: 50%;
     /* Creates a circle */
-    width: 210 px;
+    width: 170px;
     /* Set width, should be same as height */
-    height: 210px;
+    height: 160px;
     /* Set height, should be same as width */
     /* Optional: Add a border */
     border: 2px solid black;
 }
 
 
-
 header {
+    position: fixed;
+    /* Fixes navigation position */
+    top: 0;
+    left: 0;
+    background-color: rgb(24, 28, 114);
+    padding: 10px;
+    height: 100%;
 
-
-    h1 {
-        font-size: 40px;
-
-        margin: 5px;
-    }
-
-    a img:hover {
-        transition-property: ease-in;
-        filter: invert(60%);
-    }
-
-    ul li {
-        list-style: none;
-    }
-
-    nav a {
-        font-size: 22px;
-        text-decoration: none;
-        font-weight: bold;
-        color: rgb(150, 28, 28);
-
-
-    }
-
-    nav a:hover {
-
-        transition-timing-function: ease;
-        font-size: 25px;
-        color: rgb(5, 30, 99);
-
-    }
 }
 
+
+#home-link img {
+    top: 0;
+    left: 0;
+
+
+
+
+}
+
+header h1 {
+    font-size: 25px;
+    margin: 5px;
+}
+
+header a img:hover {
+    transition-property: ease-in;
+    filter: invert(60%);
+}
+
+header ul li {
+    list-style: none;
+}
+
+header nav a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+
+}
+
+header nav a:hover {
+
+    transition-timing-function: ease;
+    color: rgb(0, 0, 0);
+
+}
+
+article {
+    width: 100%;
+    padding-left: 260px
+        /* Adjust as needed */
+        /* Add padding or margin to avoid content overlapping the fixed navigation */
+
+
+}
+
+article section {
+    padding: 20px;
+}
 
 .education {
     border-bottom: 2px solid black;
