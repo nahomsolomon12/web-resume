@@ -1,6 +1,6 @@
 # Nahom S. Mulugeta — Web Resume
 
-**Live site:** https://nahmulugeta.vercel.app
+**Live site:** https://nahomulugeta.vercel.app
 
 ## About
 This repository hosts my web resume, a simple summary of my competencies and projects.
