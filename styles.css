@@ -56,7 +56,7 @@ a:hover {
   z-index: 10;
 }
 
-.brand {
+.site-nav > div {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -95,7 +95,7 @@ a:hover {
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   cursor: pointer;
-  transition: transform var(--transition), background var(--transition);
+  transition: none;
 }
 
 .nav-toggle:hover {
@@ -146,7 +146,7 @@ a:hover {
   font-size: 1rem;
   color: var(--text);
   background: rgba(255, 255, 255, 0.04);
-  transition: background var(--transition), transform var(--transition);
+  transition: none;
 }
 
 .nav-list a:hover {
@@ -163,15 +163,6 @@ a:hover {
   justify-content: center;
 }
 
-.social-links img {
-  filter: brightness(0) invert(1);
-  transition: transform var(--transition), filter var(--transition);
-}
-
-.social-links a:hover img {
-  transform: scale(1.05);
-  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.35));
-}
 
 .content {
   max-width: var(--max-width);
@@ -302,12 +293,18 @@ li {
     justify-content: space-between;
   }
 
+  .site-nav > div {
+    flex: 1;
+    min-width: 0;
+  }
+
   .site-nav {
     order: 3;
   }
 
   .nav-toggle {
     display: inline-flex;
+    margin-left: auto;
   }
 
   .nav-list {
@@ -326,6 +323,8 @@ li {
     pointer-events: none;
     transition: opacity var(--transition), transform var(--transition);
     z-index: 20;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
   }
 
   .nav-list.open {
