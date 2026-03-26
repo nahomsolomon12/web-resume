@@ -58,15 +58,29 @@ a:hover {
 
 .site-nav > div {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.site-nav > div h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
+.site-nav > div .tagline {
+  margin: 2px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
 }
 
 .avatar {
-  width: 72px;
-  height: 72px;
-  max-width: 72px;
-  max-height: 72px;
+  width: 64px;
+  height: 64px;
+  max-width: 64px;
+  max-height: 64px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.35);
@@ -180,6 +194,17 @@ a:hover {
 
 .hero-inner {
   max-width: 640px;
+}
+
+main section {
+  opacity: 0.4;
+  transform: translateY(10px);
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+main section.active-route {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero h2 {
